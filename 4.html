@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="pre">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/emb/Yf5d_Zx3AaI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embedYf5d_Zx3AaI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </div>
+
+    <div class="nav">
+        <div class="navbar">
+            <img src="2img/logo.png" class="logo">
+            <div class="tittle">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+                <img src="bell.png" id="bell">
+            </div>
+        </div>
+        <div class="info">
+            <div class="col1">
+                <h1>Digital<span>Graphy</span></h1>
+                <h3>Photographer | Designer</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Deserunt, perspiciatis. <br>
+                    Velit sed perspiciatis natus excepturi.</p>
+                <button class="btn">Download</button>
+            </div>
+            <div class="col2">
+                <img src="pattern.png" class="qw">
+                <img src="Wgirl.png" class="qq">
+            </div>
+            <div class="social-links">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-behance"></i></a>
+                <a href=""><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var bell = document.getElementById("bell");
+        bell.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                bell.src = " Aniimages/pic-1.png";
+            }
+            else {
+                bell.src = "bell.png";
+            }
+        }
+    </script>
+
+    <script>
+        var loader = document.getElementById("pre");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+    <script>
+        function myFunction(smallImg) {
+            var fullImg = document.getElementById("imgb");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+
+</body>
+
+</html>
